@@ -7,6 +7,7 @@
   --cor3: #dbd66e;
   --cor4: #6edb9a;
   --cor5: #c3dbb7;
+  --cor6: #c3dbb767;
 }
 
 * {
@@ -34,7 +35,7 @@ main {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  
   overflow: hidden;
   background-color: var(--cor0);
   width: 250px;
@@ -43,6 +44,7 @@ main {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.445);
   transition: width 0.3s, height 0.3s;
   transition-timing-function: ease;
+  transform: translate(-50%, -50%);
 }
 
 #imagem {
@@ -70,14 +72,39 @@ main {
 
 .campo{
   background-color: var(--cor1);
+  border: 2px solid var(--cor1);
   display: block;
+  width: 100%;
   height: 40px;
-  border-radius: 5px;
+  border-radius: 8px;
   margin: 5px 0px;
 }
 
 .campo > label{
   display: none;
+}
+
+.campo > span{
+  color: black;
+  font-size: 2em;
+  width: 40px;
+  padding: 5px;
+
+}
+
+div > input{
+  background-color: var(--cor0);
+  font-size: 1em;
+  width: calc(100% - 45px);
+  height: 100%;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 4px 8px;
+  transform: translateY(-12.8px);
+}
+
+.campo > input:focus-within{
+  background-color: white;
 }
 
 form >input[type="submit"] {
@@ -105,7 +132,8 @@ form > a.botao {
   height: 40px;
   padding-top: 7px;
   margin-top: 5px;
-  background-color: var(--cor1);
+  background-color: var(--cor6) ;
+  border: 2px solid black;
   border-radius: 5px;
   text-decoration: none;
   color: black;
@@ -118,5 +146,4 @@ form > a.botao:hover {
 
 form > a.botao > span {
   font-size: 1em;
-  
 }

@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+/*Todas as demais midias*/
+
+/*Typical Device Breakpoints
+
+Pequenas telas: ate 480px
+Celular: de 480px ate 768px
+Tablet: 768px ate 992px
+Desktop: 992px ate 1200px
+Grandes telas: acima de 1200px
+*/
+
+:root {
+    --cor0: #c0db6e;
+    --cor1: #6edb75;
+    --cor2: #92db6e;
+    --cor3: #dbd66e;
+    --cor4: #6edb9a;
+    --cor5: #c3dbb7;
+  }
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    body{
+        background-image: linear-gradient(to top, var(--cor3), var(--cor5));
+    }
+  #login {
+    width: 80vw;
+  }
+  #imagem {
+    float: left;
+    width: 30%;
+    height: 100%;
+  }
+  #formulario {
+    float: right;
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 993px) {
+    body{
+        background-image: linear-gradient(to top, var(--cor4), var(--cor2));
+
+    }
+  #login {
+    width: 950px;
+  }
+  #imagem {
+    float: right;
+    width: 50%;
+    height: 100%;
+  }
+  #formulario {
+    float: left;
+    width: 50%;
+  }
+}

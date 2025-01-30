@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+:root {
+  --cor0: #c0db6e;
+  --cor1: #6edb75;
+  --cor2: #92db6e;
+  --cor3: #dbd66e;
+  --cor4: #6edb9a;
+  --cor5: #c3dbb7;
+}
+
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  background-color: var(--cor5);
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+#login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  background-color: var(--cor0);
+  width: 250px;
+  height: 515px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.445);
+}
+
+#imagem {
+  height: 200px;
+  display: block;
+  background: var(--cor5) url(../imagens/underland.jpg);
+  background-size: cover;
+  background-position: right center;
+}
+
+#formulario {
+  display: block;
+  padding: 10px;
+}
